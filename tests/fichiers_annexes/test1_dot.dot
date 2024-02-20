@@ -1,0 +1,17 @@
+digraph G {
+	v0 [label="a"];
+	v1 [label="b"];
+	v2 [label="c"];
+	v3 [label="i0",input="0"];
+	v4 [label="i1",input="1"];
+	v5 [label="o0",output="0"];
+	v6 [label="o1",output="1"];
+	v0 -> v1;
+	v0 -> v2;
+	v1 -> v2;
+	v1 -> v2;
+	v1 -> v5;
+	v2 -> v6;
+	v3 -> v0;
+	v4 -> v0;
+}
